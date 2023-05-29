@@ -1,0 +1,20 @@
+Linha de raciocínio
+
+1 - Criamos o arquivo MVC
+2 - Obtivemos a certificação de segurança
+3 - Estamos criando a classe separadamente
+4 - Criando as propriedades de cada arquivo
+5 - Chamando quais classes públicas estamos usando
+(neste caso: using System.ComponentModel.DataAnnotations; Para definir propriedades que são Primary Keys
+using System.ComponentModel.DataAnnotations.Schema; Para definir quais propriedades são Foreign Keys)
+6 - Colocando as propriedades PK e FK
+7 - Baixando as ferramentas Entity Framework para criar um banco de dados de acordo com o código (poderia ser feito no início do programa)
+8 - Criamos uma pasta chamada Infra e dentro dela criamos a classe Context (mais informações abaixo)
+9 - Nesta classe 
+
+
+
+
+PASTA CONTEXT
+É a ultima camada entre a MODEL e o banco de dados. Podemos caracterizá-la como a classe responsável por captar
+os dados já validados pelo BackEnd e então transferir as informações para o Banco de dados 
