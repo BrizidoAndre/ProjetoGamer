@@ -1,0 +1,26 @@
+@model Equipe
+
+@{
+    ViewData["Title"] = "Equipe";
+}
+
+<h1>TELA DE EQUIPES</h1>
+
+<table>
+    <thead>
+        <th>Id</th>
+        <th>Nome</th>
+        <th>Imagem</th>
+    </thead>
+    <tbody>
+        @foreach (Equipe equipe in ViewBag.Equipe)
+        {    
+        <tr>
+            <td>@equipe.IdEquipe</td>
+            <td>@equipe.Nome</td>
+            <td>@equipe.Imagem</td>
+        </tr>
+        }
+    </tbody>
+
+</table>

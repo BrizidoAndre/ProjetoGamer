@@ -11,7 +11,7 @@ namespace ProjetoGamer.Models
         [Required]
         public string Nome { get; private set; }
         public string Imagem { get; private set; }
-        // Referencia que a classe equipe vai ter acesso a collection "Jogadores"
+        // Referencia que a classe equipe vai ter acesso a collection "Jogador"
         public ICollection<Jogador> Jogador { get; private set; }
     }
 }

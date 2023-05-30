@@ -32,7 +32,11 @@ namespace ProjetoGamer.Infra
                 // user Id = "nome do seu usuario de login"
                 // pwd = "Senha do seu usuário"
 
-                optionsBuilder.UseSqlServer("Data Source = DESKTOP; initial catalog = gamerManha; Integrated Security = true; TrustServerCertificate = true"); //Isto é uma string de conexão. Por aqui ele sabe o servidor do banco, o nome e por qual plataforma ele é autenticado
+                // optionsBuilder.UseSqlServer("Data Source = NOTE07-S15; Initial catalog = gamerManha; Integrated Security = true; TrustServerCertificate = true"); 
+                //Isto é uma string de conexão. Por aqui ele sabe o servidor do banco, o nome e por qual plataforma ele é autenticado. Neste exemplo, a string de conexão está configurada para uma conexão do windows
+
+                optionsBuilder.UseSqlServer("Data Source = NOTE07-S15; Initial catalog = gamerManha; User Id = sa; pwd = Senai@134; TrustServerCertificate = true");
+                // ^^^^^ Já aqui é um exemplo de string de conexão com o SQL Server
             }
         }
         // Referências de classes e tabelas
