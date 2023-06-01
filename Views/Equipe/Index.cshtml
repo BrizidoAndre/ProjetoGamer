@@ -6,10 +6,10 @@
 
 <h1>TELA DE EQUIPES</h1>
 
-<form method="post" action='@Url.Action("Cadastrar")'  enctype="multipart/form-data">
+<form method="post" action='@Url.Action("Cadastrar")' enctype="multipart/form-data">
 
     <label for="">Nome</label>
-    <input type="text" name="Nome">
+    <input type="text" name="Nome" required>
 
     <label for="">Imagem</label>
     <input type="file" name="Imagem">
@@ -18,20 +18,26 @@
 
 </form>
 
-<table class = "table table-striped table-responsive">
-    <thead class = "table table-striped table-responsive">
+<table class="table table-striped table-responsive">
+    <thead class="table table-striped table-responsive">
         <th>Id</th>
         <th>Nome</th>
         <th>Imagem</th>
+        <th>Ações</th>
     </thead>
     <tbody>
         @foreach (Equipe equipe in ViewBag.Equipe)
-        {    
-        <tr>
-            <td>@equipe.IdEquipe</td>
-            <td>@equipe.Nome</td>
-            <td>@equipe.Imagem.</td>
-        </tr>
+        {
+            <tr>
+                <td>@equipe.IdEquipe</td>
+                <td>@equipe.Nome</td>
+                <td>
+                    <img src="/img/Equipes/@equipe.Imagem" alt="Imagem da equipe @equipe.Nome" width="70px">
+                </td>
+                <td> @** Definindo qual classe do controller será usada / Qual método será utilizado dentro da classe/ *@
+                    <a asp-area="" asp-controller="Equipe" asp-action="Excluir" asp-route-id="@equipe.IdEquipe">Excluir</a>
+                </td>
+            </tr>
         }
     </tbody>
 </table>

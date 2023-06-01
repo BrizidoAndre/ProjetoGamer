@@ -13,6 +13,22 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\51910007811\\Desktop\\ProjetoGamer\\wwwroot\\img\\Equipes\\Foto MUITO lega.png",
+      "PackagePath": "staticwebassets\\img\\Equipes\\Foto MUITO lega.png"
+    },
+    {
+      "Id": "C:\\Users\\51910007811\\Desktop\\ProjetoGamer\\wwwroot\\img\\Equipes\\Foto de fundo 2.png",
+      "PackagePath": "staticwebassets\\img\\Equipes\\Foto de fundo 2.png"
+    },
+    {
+      "Id": "C:\\Users\\51910007811\\Desktop\\ProjetoGamer\\wwwroot\\img\\Equipes\\Imagem",
+      "PackagePath": "staticwebassets\\img\\Equipes"
+    },
+    {
+      "Id": "C:\\Users\\51910007811\\Desktop\\ProjetoGamer\\wwwroot\\img\\Equipes\\padrao.png",
+      "PackagePath": "staticwebassets\\img\\Equipes\\padrao.png"
+    },
+    {
       "Id": "C:\\Users\\51910007811\\Desktop\\ProjetoGamer\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },

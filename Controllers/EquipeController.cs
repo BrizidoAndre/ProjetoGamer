@@ -23,7 +23,7 @@ namespace ProjetoGamer.Controllers
         //!Instância do contexto para acessar o banco de dados e inserir o using para acessar a classe
         Context c = new Context();
 
-        //TODO //Criando o método Index que retorna a lista do banco de dados
+        // TODO //Criando o método Index que retorna a lista do banco de dados
         [Route("Listar")] //http://localhost:/Equipe/Listar
         public IActionResult Index()
         {
@@ -33,6 +33,8 @@ namespace ProjetoGamer.Controllers
             // Retorna a view de equipe (TELA)
             return View();
         }
+
+
         //TODO //Criando o método para cadastrar informações de um formulário
         [Route("Cadastrar")]
         public IActionResult Cadastrar(IFormCollection form)//<<<< É uma classe que cadastra formulários
@@ -41,7 +43,7 @@ namespace ProjetoGamer.Controllers
             Equipe novaEquipe = new Equipe();
 
             // Aqui pegamos os valores recebidos do formulário e adicionamos no novo objeto
-            novaEquipe.Nome = form["Nome"].ToString();
+            novaEquipe.Nome = form["Nome"].ToString(); //O elemento entre aspas neste exemplo é o nome do input do formulário. Lembrando que devemos definir o tipo de dado que o input nos traz.
             
             //* Aqui estava adicionando como string. Valor que não queremos
             //* novaEquipe.Imagem = form["Imagem"].ToString();
@@ -62,7 +64,7 @@ namespace ProjetoGamer.Controllers
                 }
 
                 // Gera o caminho completo até o caminho do arquivo (imagem - nome com extensão)
-                var path = Path.Combine(folder, file.Name);
+                var path = Path.Combine(folder, file.FileName);
 
                 using (var stream = new FileStream(path, FileMode.Create))
                 {
@@ -90,6 +92,16 @@ namespace ProjetoGamer.Controllers
             //O "~" serve para resumir o endereço Local Host
         }
 
+        // TODO //Inicio do método excluir
+        [Route("Excluir/{id}")]
+        public IActionResult Excluir(int id) // O parametro serve para localizar a equipe a ser excluida
+        {
+            // Aqui, pegamos o objeto de contexto (que representa nosso banco de dados) e utilizamos a função 'FirstOrDefault' para encontrar o primeiro objeto do banco de dados que possui o mesmo Id do Id a ser deletado. Caso o Id não seja encontrado, um valor default é retornado
+            Equipe equipeBuscada = c.Equipes.First(x => x.IdEquipe == id);
+            c.Remove(equipeBuscada); //Deletando o produto pequisado pela função
+            c.SaveChanges(); //Salvando as alterações
+            return LocalRedirect("~/Equipe/Listar");
+        }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
