@@ -34,8 +34,13 @@
                 <td>
                     <img src="/img/Equipes/@equipe.Imagem" alt="Imagem da equipe @equipe.Nome" width="70px">
                 </td>
-                <td> @** Definindo qual classe do controller será usada / Qual método será utilizado dentro da classe/ *@
+                <td> @* asp-controller = Definindo qual classe do controller será usada  *@
+                    @* asp-action = Qual método será utilizado dentro da classe *@
+                    @* asp-route-id = Definindo que o id do hyperlink será o mesmo id da equipe semelhante a da coluna *@
                     <a asp-area="" asp-controller="Equipe" asp-action="Excluir" asp-route-id="@equipe.IdEquipe">Excluir</a>
+                </td>
+                <td>
+                    <a asp-area="" asp-controller="Equipe"  asp-action="Editar" asp-route-id="@equipe.IdEquipe">Editar</a>
                 </td>
             </tr>
         }

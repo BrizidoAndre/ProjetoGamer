@@ -21,8 +21,16 @@
       "PackagePath": "staticwebassets\\img\\Equipes\\Foto de fundo 2.png"
     },
     {
+      "Id": "C:\\Users\\51910007811\\Desktop\\ProjetoGamer\\wwwroot\\img\\Equipes\\Foto de fundo.png",
+      "PackagePath": "staticwebassets\\img\\Equipes\\Foto de fundo.png"
+    },
+    {
       "Id": "C:\\Users\\51910007811\\Desktop\\ProjetoGamer\\wwwroot\\img\\Equipes\\Imagem",
       "PackagePath": "staticwebassets\\img\\Equipes"
+    },
+    {
+      "Id": "C:\\Users\\51910007811\\Desktop\\ProjetoGamer\\wwwroot\\img\\Equipes\\gta-sa-mod-galo-de-tenis-galinha-shoes.jpg",
+      "PackagePath": "staticwebassets\\img\\Equipes\\gta-sa-mod-galo-de-tenis-galinha-shoes.jpg"
     },
     {
       "Id": "C:\\Users\\51910007811\\Desktop\\ProjetoGamer\\wwwroot\\img\\Equipes\\padrao.png",
