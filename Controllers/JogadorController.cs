@@ -20,12 +20,13 @@ namespace ProjetoGamer.Controllers
             _logger = logger;
         }
 
+        [Route("Listar")]
         public IActionResult Index()
         {
             ViewBag.Jogador = c.Jogador.ToList();
             ViewBag.Equipe = c.Equipes.ToList();
 
-            
+
             return View();
         }
 

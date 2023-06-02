@@ -1,5 +1,23 @@
 @model Jogador
 
 @{
-    
+    ViewData["Title"] = "Jogadores";
 }
+
+<h1>Tela de Jogadores</h1>
+
+<form method="post" action="">
+    <label for="">Nome</label>
+    <input type="text" name="Nome" required>
+
+    <label for="">Selecione uma Equipe</label>
+    <input type="text" name="Equipe" required>
+
+    <label for="">Email</label>
+    <input type="email">
+
+    <label for="">Senha</label>
+    <input type="password" name="Senha" required>
+
+    <button type="submit">Cadastrar</button>
+</form>
