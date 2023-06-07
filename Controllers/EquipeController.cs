@@ -27,6 +27,7 @@ namespace ProjetoGamer.Controllers
         [Route("Listar")] //http://localhost:/Equipe/Listar
         public IActionResult Index()
         {
+            ViewBag.Username = HttpContext.Session.GetString("Username");
             // Variável que armazena as equipes listadas do banco de dados
             ViewBag.Equipe = c.Equipes.ToList();
 
@@ -104,6 +105,8 @@ namespace ProjetoGamer.Controllers
         [Route("Editar")]
         public IActionResult Editar(int id)
         {
+            ViewBag.Username = HttpContext.Session.GetString("Username");
+
             // A mesma coisa que fizemos no método de Excluir
             Equipe equipeBuscada = c.Equipes.First(x => x.IdEquipe == id);
             // ViewBag = É como se fosse uma mochila temporária que pode ser usada pelas classes Views

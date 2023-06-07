@@ -37,6 +37,7 @@ namespace ProjetoGamer.Infra
 
                 optionsBuilder.UseSqlServer("Data Source = NOTE07-S15; Initial catalog = gamerManha; User Id = sa; pwd = Senai@134; TrustServerCertificate = true");
                 // ^^^^^ Já aqui é um exemplo de string de conexão com o SQL Server
+                // todo |Pasta| Infra 
             }
         }
         // Referências de classes e tabelas

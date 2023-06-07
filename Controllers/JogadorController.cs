@@ -25,6 +25,7 @@ namespace ProjetoGamer.Controllers
         [Route("Listar")]
         public IActionResult Index()
         {
+            ViewBag.Username = HttpContext.Session.GetString("Username");
             ViewBag.Jogador = c.Jogador.ToList();
             ViewBag.Equipe = c.Equipes.ToList();
 
@@ -36,19 +37,53 @@ namespace ProjetoGamer.Controllers
         [Route("Cadastrar")]
         public IActionResult Cadastrar(IFormCollection form)
         {
-            Jogador novojogador = new Jogador();
+            Jogador novoJogador = new Jogador();
 
-            novojogador.Equipe.Nome = form["Equipe"].ToString();
-            novojogador.NomeJogador = form["Nome"].ToString();
-            novojogador.Email = form["Email"].ToString();
-            novojogador.Senha = form["Senha"].ToString();
+            novoJogador.IdEquipe = int.Parse(form["IdEquipe"].ToString());
+            novoJogador.NomeJogador = form["Nome"].ToString();
+            novoJogador.Email = form["Email"].ToString();
+            novoJogador.Senha = form["Senha"].ToString();
 
-            c.Jogador.Add(novojogador);
+            c.Jogador.Add(novoJogador);
+
+            c.SaveChanges();
+            
+            return LocalRedirect("~/Jogador/Listar");
+        }
+
+        // todo //Inicio do método excluir
+        [Route("Excluir/id")]
+        public IActionResult Excluir(int id)
+        {
+            Jogador jogadorExcluido = c.Jogador.First(z => z.IdJogador == id);
+
+            c.Remove(jogadorExcluido);
 
             c.SaveChanges();
 
-            
             return LocalRedirect("~/Jogador/Listar");
+        }
+
+        [Route("Editar/id")]
+        public IActionResult Editar(int id)
+        {
+            ViewBag.Username = HttpContext.Session.GetString("Username");
+            Jogador jogadorbuscado = c.Jogador.First(z => z.IdJogador == id);
+
+            ViewBag.Jogador = jogadorbuscado;
+
+            return LocalRedirect("~/Jogador/Edit");
+        }
+
+        [Route("Atualizar")]
+        public IActionResult Atualizar(IFormCollection form)
+        {
+            Jogador novoJogador = new Jogador();
+
+            novoJogador.IdJogador = int.Parse(form["IdJogador"].ToString());
+            novoJogador.IdEquipe = int.Parse(form["IdEquipe"].ToString());
+
+            return LocalRedirect("~/Jogador/Edit");
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

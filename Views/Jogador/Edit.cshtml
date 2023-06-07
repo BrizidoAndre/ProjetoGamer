@@ -1,0 +1,21 @@
+@model Jogador
+
+@{
+    ViewData["Title"] = "Edit";
+    
+}
+
+<h1>Edição de Jogadores</h1>
+
+<form method="post" action='@Url.Action("Atualizar")' enctype="multipart/form-data">
+    @* O input abaixo está escondido através do type'hidden'  *@
+    <input type="hidden" name="IdJogador" value="@ViewBag.Equipe.IdEquipe">
+
+    <label for="">Nome</label>
+    <input placeholder="Digite o nome a ser alterado" type="text" name="Nome" value="@ViewBag.Equipe.Nome" required>
+
+    <label for="">Imagem</label>
+    <input type="file" name="Imagem" value="@ViewBag.Equipe.Imagem">
+
+    <button type="submit">Atualizar</button>
+</form>

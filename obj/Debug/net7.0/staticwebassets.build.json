@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "oDtSUCgOlaxI9kIIkRaUGhtdlj2/mmBZ46hnjwMGmPY=",
+  "Hash": "+JZSAV6F3Of56Sk/S681DYE7tRsxhk7j27fCTCddy+U=",
   "Source": "ProjetoGamer",
   "BasePath": "_content/ProjetoGamer",
   "Mode": "Default",
@@ -83,6 +83,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\51910007811\\Desktop\\ProjetoGamer\\wwwroot\\img\\Equipes\\corinthians.png",
+      "SourceId": "ProjetoGamer",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\51910007811\\Desktop\\ProjetoGamer\\wwwroot\\",
+      "BasePath": "_content/ProjetoGamer",
+      "RelativePath": "img/Equipes/corinthians.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\Equipes\\corinthians.png"
     },
     {
       "Identity": "C:\\Users\\51910007811\\Desktop\\ProjetoGamer\\wwwroot\\img\\Equipes\\Foto de fundo 2.png",
