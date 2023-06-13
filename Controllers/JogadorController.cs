@@ -64,10 +64,13 @@ namespace ProjetoGamer.Controllers
             return LocalRedirect("~/Jogador/Listar");
         }
 
+        // Todo // Inicio do método editar
         [Route("Editar/id")]
         public IActionResult Editar(int id)
         {
             ViewBag.Username = HttpContext.Session.GetString("Username");
+
+
             Jogador jogadorbuscado = c.Jogador.First(z => z.IdJogador == id);
 
             ViewBag.Jogador = jogadorbuscado;
@@ -75,6 +78,7 @@ namespace ProjetoGamer.Controllers
             return LocalRedirect("~/Jogador/Edit");
         }
 
+        // Todo // Inicio do método atualizar
         [Route("Atualizar")]
         public IActionResult Atualizar(IFormCollection form)
         {
@@ -82,8 +86,20 @@ namespace ProjetoGamer.Controllers
 
             novoJogador.IdJogador = int.Parse(form["IdJogador"].ToString());
             novoJogador.IdEquipe = int.Parse(form["IdEquipe"].ToString());
+            novoJogador.Senha = int.Parse(form["Senha"].ToString());
+            novoJogador.NomeJogador = int.Parse(form["Nome"].ToString());
+            novoJogador.Email = int.Parse(form["Email"].ToString());
 
-            return LocalRedirect("~/Jogador/Edit");
+            Jogador jogadorBuscado = c.Jogador.First(z => z.IdJogador == novoJogador.IdJogador);
+
+            jogadorBuscado.Senha = novoJogador.Senha;
+            jogadorBuscado.NomeJogador = novoJogador.NomeJogador;
+            jogadorBuscado.Email = novoJogador.Email;
+
+            c.Jogador.Update(jogadorBuscado);
+            c.SaveChanges();
+
+            return LocalRedirect("~/Jogador/Listar");
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
