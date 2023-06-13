@@ -18,3 +18,25 @@ using System.ComponentModel.DataAnnotations.Schema; Para definir quais proprieda
 PASTA CONTEXT
 É a ultima camada entre a MODEL e o banco de dados. Podemos caracterizá-la como a classe responsável por captar
 os dados já validados pelo BackEnd e então transferir as informações para o Banco de dados 
+
+
+
+FAZENDO A Migração
+
+1- Clonamos a pasta deste link https://github.com/senai-desenvolvimento/2023-1S-1D/tree/main/Estudos/gamer-para-estudo
+
+2 - Na pasta clonada, copiamos e clonamos a pasta assets (colocando ela dentro da pasta wwwroot) 
+
+3 - Fazemos a mesma coisa para a pasta images
+
+4 - Na pasta clonada copiamos o arquivo style.css dentro da pasta css e clonamos ela (dentro da pasta wwwroot/css)
+
+5 - Fazer uma cópia por preocaução do arquivo _Layout.cshtml já que vamos alterá-lo
+
+6 - copiar o header do arquivo index.html da pasta clonada e copiamos ela na pasta _Layout.cshtml separadamente(pra verificar a possibilidade de erro)
+
+7 - Retirar os links do arquivo layout (relembrando dentro da pasta SHARED) e colocar o novo link com endereçp "~/css/style.css"
+
+8 - Substituir do header que copiamos todos os endereços no estilo "./" e transcrever para o endereçamento "~/" (usando o 'ctrl + f' FIND e REPLACE)
+
+9 - Fazer os mesmos passos para o footer. Copiando colando e substituindo. O footer antigo pode ser excluíndo integramente com exceção da função await. Pode deletar os scripts.

@@ -65,7 +65,7 @@ namespace ProjetoGamer.Controllers
         }
 
         // Todo // Inicio do método editar
-        [Route("Editar/id")]
+        [Route("Editar")]
         public IActionResult Editar(int id)
         {
             ViewBag.Username = HttpContext.Session.GetString("Username");
@@ -75,7 +75,7 @@ namespace ProjetoGamer.Controllers
 
             ViewBag.Jogador = jogadorbuscado;
 
-            return LocalRedirect("~/Jogador/Edit");
+            return View("Edit");
         }
 
         // Todo // Inicio do método atualizar
@@ -86,9 +86,9 @@ namespace ProjetoGamer.Controllers
 
             novoJogador.IdJogador = int.Parse(form["IdJogador"].ToString());
             novoJogador.IdEquipe = int.Parse(form["IdEquipe"].ToString());
-            novoJogador.Senha = int.Parse(form["Senha"].ToString());
-            novoJogador.NomeJogador = int.Parse(form["Nome"].ToString());
-            novoJogador.Email = int.Parse(form["Email"].ToString());
+            novoJogador.Senha = form["Senha"].ToString();
+            novoJogador.NomeJogador = form["Nome"].ToString();
+            novoJogador.Email = form["Email"].ToString();
 
             Jogador jogadorBuscado = c.Jogador.First(z => z.IdJogador == novoJogador.IdJogador);
 

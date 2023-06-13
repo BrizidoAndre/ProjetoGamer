@@ -8,9 +8,6 @@
 @* TODO TELA DE CADASTRO *@
 <form method="post" action='@Url.Action("Cadastrar")' enctype="multipart/form-data">
     <div class="form-row align-items-center">
-
-
-        <label for="">Selecione uma Equipe</label>
         <div class="col-auto my-1">
             <label class="mr-sm-2" for="inlineFormCustomSelect">Selecione uma Equipe</label>
             <select name="IdEquipe" class="custom-select mr-sm-2" id="inlineFormCustomSelect">
@@ -55,8 +52,9 @@
                 <td>@jogador.Email</td>
 
                 <td>
-                    <a asp-area="" asp-controller="Jogador" asp-action="Excluir"
-                        asp-route-id="@jogador.IdJogador">Excluir</a>
+                    <a asp-area="" asp-controller="Jogador" asp-action="Excluir" asp-route-id="@jogador.IdJogador">Excluir</a>
+                </td>
+                <td>
                     <a asp-area="" asp-controller="Jogador" asp-action="Editar" asp-route-id="@jogador.IdJogador">Editar</a>
                 </td>
             </tr>

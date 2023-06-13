@@ -1,4 +1,4 @@
-@model Jogador 
+@model Jogador
 
 @{
     ViewData["Title"] = "Edit";
@@ -9,7 +9,7 @@
 
 <form method="post" action='@Url.Action("Atualizar")' enctype="multipart/form-data">
     @* O input abaixo está escondido através do type'hidden'  *@
-    <input type="hidden" name="IdJogador" value="@ViewBag.Equipe.IdEquipe">
+    <input type="hidden" name="IdJogador" value="@ViewBag.Jogador.IdJogador">
 
     <label for="">Nome</label>
     <input type="text" name="Nome" value="@ViewBag.Jogador.Nome" required>

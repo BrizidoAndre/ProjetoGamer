@@ -57,6 +57,19 @@ namespace ProjetoGamer.Controllers
             return LocalRedirect("~/Login/Login");
         }
 
+        // todo //Método DESLOGAR
+        [Route("Logout")]
+        public IActionResult Logout()
+        {
+            // remove o usuário logado
+            HttpContext.Session.Remove("Username");
+
+            // Redireciona para o início do site (pasta raíz) e desloga
+
+            return LocalRedirect("~/");
+
+        }
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
