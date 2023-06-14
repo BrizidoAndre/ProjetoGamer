@@ -1,16 +1,17 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - ProjetoGamer</title>
     <link rel="stylesheet" href="~/css/style.css">
+    <link rel="stylesheet" href="~/css/Header-Footer.css">
 </head>
+
 <body>
 
-
-
-       <!-- HEADER -->
+    <!-- HEADER -->
     <header class="header">
         <div class="header-top">
             <div class="container-grid header-top-flex">
@@ -51,11 +52,12 @@
                         <a asp-controller="Home" asp-action="Index">Início</a>
                         @if (ViewBag.Username != null)
                         {
-                        <a asp-controller="Equipe" asp-action="Index">Equipes</a>
-                        <a asp-controller="Jogador" asp-action="Index">Jogadores</a>
-                        <a asp-controller="Login" asp-action="Logout">Logout</a>
+                            <a asp-controller="Equipe" asp-action="Index">Equipes</a>
+                            <a asp-controller="Jogador" asp-action="Index">Jogadores</a>
+                            <a asp-controller="Login" asp-action="Logout">Logout</a>
                         }
-                        @** Note o href aqui no hyperlink de notícias. O ~/ serve para levar para outro site e o # serve para dentro do próprio site o hyperlink levar o usuário até o bloco de código com esse ID *@
+                        @** Note o href aqui no hyperlink de notícias. O ~/ serve para levar para outro site e o # serve
+                        para dentro do próprio site o hyperlink levar o usuário até o bloco de código com esse ID *@
                         <a href="~/#noticias">Notícias</a>
 
                         <a class="phone-box">
@@ -83,7 +85,8 @@
                 <input type="checkbox" id="mostra-esconde-icones">
                 <div class="icons-header-bkg">
                     <div class="icons-header">
-                        <a class="nav-link text-dark" asp-area="" asp-controller="Login" asp-action="Index"><img src="~/assets/user-icon.svg" alt="user-login"></a>
+                        <a class="nav-link text-dark" asp-area="" asp-controller="Login" asp-action="Index"><img
+                                src="~/assets/user-icon.svg" alt="user-login"></a>
                         <img src="~/assets/market-icon.png" alt="market icon">
                         <img src="~/assets/search-icon.png" alt="search icon">
                     </div>
@@ -92,13 +95,11 @@
         </div>
     </header>
 
-    <div class="container">
-        <main role="main" class="pb-3">
-            @RenderBody()
-        </main>
-    </div>
 
-     <!-- FOOTER -->
+    @RenderBody()
+
+
+    <!-- FOOTER -->
     <footer>
         <div class="container-grid footer-flex">
 
@@ -130,8 +131,8 @@
 
                 <ul class="menu-footer">
                     <li class="menu-ftitem"><a href="#">Início</a></li>
+                    <li class="menu-ftitem"><a href="#noticias">Notícias</a></li>
                     <li class="menu-ftitem"><a href="#">Jogadores</a></li>
-                    <li class="menu-ftitem"><a href="#">Notícias</a></li>
                     <li class="menu-ftitem"><a href="#">Login</a></li>
                     <li class="menu-ftitem" id="link-equipe"><a href="#">Equipes</a></li>
                 </ul>
@@ -181,4 +182,5 @@
 
     @await RenderSectionAsync("Scripts", required: false)
 </body>
+
 </html>

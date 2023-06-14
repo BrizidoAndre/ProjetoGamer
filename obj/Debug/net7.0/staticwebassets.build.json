@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "e7u0xnCklk2eMFdhqTe7EEO1AN+58mzaoO2adzSNSIs=",
+  "Hash": "ZyDOr5pmV3eaKpiTxSzxrp9AfqcESE1u0Jhc5tHbE1g=",
   "Source": "ProjetoGamer",
   "BasePath": "_content/ProjetoGamer",
   "Mode": "Default",
@@ -1052,6 +1052,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\vector-user.svg"
+    },
+    {
+      "Identity": "C:\\Users\\51910007811\\Desktop\\ProjetoGamer\\wwwroot\\css\\Header-Footer.css",
+      "SourceId": "ProjetoGamer",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\51910007811\\Desktop\\ProjetoGamer\\wwwroot\\",
+      "BasePath": "_content/ProjetoGamer",
+      "RelativePath": "css/Header-Footer.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\Header-Footer.css"
     },
     {
       "Identity": "C:\\Users\\51910007811\\Desktop\\ProjetoGamer\\wwwroot\\css\\site.css",

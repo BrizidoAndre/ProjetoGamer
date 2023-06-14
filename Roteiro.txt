@@ -35,7 +35,7 @@ FAZENDO A Migração
 
 6 - copiar o header do arquivo index.html da pasta clonada e copiamos ela na pasta _Layout.cshtml separadamente(pra verificar a possibilidade de erro)
 
-7 - Retirar os links do arquivo layout (relembrando dentro da pasta SHARED) e colocar o novo link com endereçp "~/css/style.css"
+7 - Retirar os links do arquivo layout (relembrando dentro da pasta SHARED) e colocar o novo link com endereço "~/css/style.css"
 
 8 - Substituir do header que copiamos todos os endereços no estilo "./" e transcrever para o endereçamento "~/" (usando o 'ctrl + f' FIND e REPLACE)
 

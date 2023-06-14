@@ -65,15 +65,15 @@ namespace ProjetoGamer.Controllers
         }
 
         // Todo // Inicio do método editar
-        [Route("Editar")]
+        [Route("Editar/{id}")]
         public IActionResult Editar(int id)
         {
             ViewBag.Username = HttpContext.Session.GetString("Username");
 
-
             Jogador jogadorbuscado = c.Jogador.First(z => z.IdJogador == id);
 
             ViewBag.Jogador = jogadorbuscado;
+            ViewBag.Equipe = c.Equipes.ToList();
 
             return View("Edit");
         }
