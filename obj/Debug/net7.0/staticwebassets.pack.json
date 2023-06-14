@@ -245,6 +245,18 @@
       "PackagePath": "staticwebassets\\css\\Header-Footer.css"
     },
     {
+      "Id": "C:\\Users\\51910007811\\Desktop\\ProjetoGamer\\wwwroot\\css\\equipes.css",
+      "PackagePath": "staticwebassets\\css\\equipes.css"
+    },
+    {
+      "Id": "C:\\Users\\51910007811\\Desktop\\ProjetoGamer\\wwwroot\\css\\jogadores.css",
+      "PackagePath": "staticwebassets\\css\\jogadores.css"
+    },
+    {
+      "Id": "C:\\Users\\51910007811\\Desktop\\ProjetoGamer\\wwwroot\\css\\login.css",
+      "PackagePath": "staticwebassets\\css\\login.css"
+    },
+    {
       "Id": "C:\\Users\\51910007811\\Desktop\\ProjetoGamer\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
@@ -367,6 +379,10 @@
     {
       "Id": "C:\\Users\\51910007811\\Desktop\\ProjetoGamer\\wwwroot\\img\\Equipes\\gta-sa-mod-galo-de-tenis-galinha-shoes.jpg",
       "PackagePath": "staticwebassets\\img\\Equipes\\gta-sa-mod-galo-de-tenis-galinha-shoes.jpg"
+    },
+    {
+      "Id": "C:\\Users\\51910007811\\Desktop\\ProjetoGamer\\wwwroot\\img\\Equipes\\molerat.webp",
+      "PackagePath": "staticwebassets\\img\\Equipes\\molerat.webp"
     },
     {
       "Id": "C:\\Users\\51910007811\\Desktop\\ProjetoGamer\\wwwroot\\img\\Equipes\\padrao.png",

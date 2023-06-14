@@ -39,8 +39,6 @@ header #mostra-esconde-icones {
   display: none;
 }
 
-.header-flex {}
-
 header .header-bottom {
   display: flex;
   justify-content: space-between;
