@@ -49,7 +49,7 @@ else
                     <th>Id</th>
                     <th>Nome</th>
                     <th>Foto</th>
-                    <th>&spades;</th>
+                    <th>Ações</th>
                 </tr>
             </thead>
             <tbody>
@@ -66,10 +66,8 @@ else
                         coluna *@
                             <a asp-area="" asp-controller="Equipe" asp-action="Excluir" asp-route-id="@equipe.IdEquipe"><img
                                     class="yellow-trash" src="~/assets/trash.png" alt=""></a>
-                        </td>
-                        <td>
                             <a asp-area="" asp-controller="Equipe" asp-action="Editar"
-                                asp-route-id="@equipe.IdEquipe">Editar</a>
+                                asp-route-id="@equipe.IdEquipe"><img class="yellow-trash" src="~/assets/yellow-gear.png" alt=""></a>
                         </td>
                     </tr>
                 }

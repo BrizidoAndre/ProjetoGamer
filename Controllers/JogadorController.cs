@@ -85,7 +85,6 @@ namespace ProjetoGamer.Controllers
             Jogador novoJogador = new Jogador();
 
             novoJogador.IdJogador = int.Parse(form["IdJogador"].ToString());
-            novoJogador.IdEquipe = int.Parse(form["IdEquipe"].ToString());
             novoJogador.Senha = form["Senha"].ToString();
             novoJogador.NomeJogador = form["Nome"].ToString();
             novoJogador.Email = form["Email"].ToString();
