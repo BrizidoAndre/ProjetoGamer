@@ -20,7 +20,7 @@ else
         <section class="container-grid cadastro-equipes">
 
 
-            <form method="post" action='@Url.Action("Cadastrar")' enctype="multipart/form-data" class="frm-cad-equipe">
+            <form method="post" enctype="multipart/form-data" class="frm-cad-equipe"  action="@Url.Action("Cadastrar")">
                 <div class="cadequipe-titulo">
                     <h1>Cadastro de Jogadores</h1>
                     <hr>
@@ -52,9 +52,9 @@ else
                 <thead>
                     <tr>
                         <th>Id</th>
-                        <th>Nome</th>
-                        <th>Imagem</th>
                         <th>Equipe</th>
+                        <th>Imagem</th>
+                        <th>Jogador</th>
                         <th>Email</th>
                         <th>Ações</th>
                     </tr>
@@ -71,9 +71,11 @@ else
 
                             <td><a asp-area="" asp-controller="Jogador" asp-action="Excluir"
                                     asp-route-id="@jogador.IdJogador"><img class="yellow-trash" src="~/assets/trash.png"
-                                        alt=""></a></td>
-                            <td><a asp-area="" asp-controller="Jogador" asp-action="Editar"
-                                    asp-route-id="@jogador.IdJogador"><img class="yellow-trash" src="~/assets/yellow-gear.png" alt=""></a></td>
+                                        alt=""></a>
+                                <a asp-area="" asp-controller="Jogador" asp-action="Editar"
+                                    asp-route-id="@jogador.IdJogador"><img class="yellow-trash" src="~/assets/yellow-gear.png"
+                                        alt=""></a>
+                            </td>
                         </tr>
                     }
                 </tbody>

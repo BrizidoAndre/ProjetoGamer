@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "ufb4itp/DhFuB2XY/RSy2BM8oPrKN3rvHXtv//LWlTE=",
+  "Hash": "YhkU3AqMsNHxouMmVreXy+wi56ocTwHGHQmjkZ05gZg=",
   "Source": "ProjetoGamer",
   "BasePath": "_content/ProjetoGamer",
   "Mode": "Default",
@@ -1054,6 +1054,23 @@
       "OriginalItemSpec": "wwwroot\\assets\\vector-user.svg"
     },
     {
+      "Identity": "C:\\Users\\51910007811\\Desktop\\ProjetoGamer\\wwwroot\\assets\\yellow-gear.png",
+      "SourceId": "ProjetoGamer",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\51910007811\\Desktop\\ProjetoGamer\\wwwroot\\",
+      "BasePath": "_content/ProjetoGamer",
+      "RelativePath": "assets/yellow-gear.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\yellow-gear.png"
+    },
+    {
       "Identity": "C:\\Users\\51910007811\\Desktop\\ProjetoGamer\\wwwroot\\css\\equipes.css",
       "SourceId": "ProjetoGamer",
       "SourceType": "Discovered",
@@ -1681,6 +1698,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\Equipes\\padrao.png"
+    },
+    {
+      "Identity": "C:\\Users\\51910007811\\Desktop\\ProjetoGamer\\wwwroot\\img\\Equipes\\Petebaseball.webp",
+      "SourceId": "ProjetoGamer",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\51910007811\\Desktop\\ProjetoGamer\\wwwroot\\",
+      "BasePath": "_content/ProjetoGamer",
+      "RelativePath": "img/Equipes/Petebaseball.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\Equipes\\Petebaseball.webp"
     },
     {
       "Identity": "C:\\Users\\51910007811\\Desktop\\ProjetoGamer\\wwwroot\\js\\site.js",

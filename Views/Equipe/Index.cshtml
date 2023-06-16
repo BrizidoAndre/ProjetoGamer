@@ -19,7 +19,7 @@ else
     <section class="container-grid cadastro-equipes">
 
 
-        <form class="frm-cad-equipe" method="post" action='@Url.Action("Cadastrar")' enctype="multipart/form-data">
+        <form class="frm-cad-equipe" method="post" enctype="multipart/form-data" action="@Url.Action("Cadastrar")">
             <div class="cadequipe-titulo">
                 <h1>Cadastro de Equipes</h1>
                 <hr>
@@ -27,7 +27,7 @@ else
 
             <input class="campo-entrada" type="text" placeholder="Digite o nome da sua equipe:" name="Nome" required>
             <label class="foto" for="foto-file">
-                <input type="file" id="foto-file" name="Imagem">
+                <input type="file" id="foto-file" name="Imagem" value="Bananas">
             </label>
 
             <button type="submit">Cadastrar</button>

@@ -314,7 +314,7 @@ section.noticias .card-noticia p {
     .banner {
         margin-top: 0;
         background-image: url(../images/Banner_Liga-Game.png);
-        
+
         background-size: auto 100%;
         background-repeat: no-repeat;
         background-position: center;
@@ -331,10 +331,11 @@ section.noticias .card-noticia p {
         padding: 80px 0px;
     }
 
- 
-     .card-jogos  img {
+
+    .card-jogos img {
         width: 450px;
     }
+
     .card-jogos>img:first-of-type {
         margin-bottom: 0;
     }
@@ -347,9 +348,11 @@ section.noticias .card-noticia p {
         justify-content: center;
         justify-content: space-between;
     }
+
     section.progamer .progamer-title {
         width: 100%;
     }
+
     section.progamer h2 {
         font-size: 2rem;
         letter-spacing: 5px;
@@ -365,7 +368,7 @@ section.noticias .card-noticia p {
         /* background: #EC4358; */
     }
 
-    
+
     section.progamer .progamer-flex .gamers>img {
         height: 100%;
         width: auto;
@@ -384,7 +387,7 @@ section.noticias .card-noticia p {
         background-image: url(../images/backgrund_notícias.png);
     }
 
-    section.noticias:after  {
+    section.noticias:after {
         content: "";
         position: absolute;
         top: 0;
@@ -397,14 +400,14 @@ section.noticias .card-noticia p {
         backdrop-filter: blur(10px);
 
     }
-    
+
     section.noticias .noticias-flex {
-        position:relative;
+        position: relative;
         z-index: 42;
         justify-content: space-between;
     }
 
-    
+
     section.noticias .card-noticia {
         max-width: 220px;
         /* margin: 0; */
@@ -413,6 +416,7 @@ section.noticias .card-noticia p {
     section.noticias div h2 {
         font-size: 2.5rem;
     }
+
     section.noticias div hr {
         width: 25%;
     }

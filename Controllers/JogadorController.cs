@@ -82,18 +82,21 @@ namespace ProjetoGamer.Controllers
         [Route("Atualizar")]
         public IActionResult Atualizar(IFormCollection form)
         {
-            Jogador novoJogador = new Jogador();
+            Jogador novoJogador = new Jogador(); 
 
+            novoJogador.IdEquipe = int.Parse(form["IdEquipe"].ToString());
             novoJogador.IdJogador = int.Parse(form["IdJogador"].ToString());
-            novoJogador.Senha = form["Senha"].ToString();
+
             novoJogador.NomeJogador = form["Nome"].ToString();
             novoJogador.Email = form["Email"].ToString();
+            novoJogador.Senha = form["Senha"].ToString();
 
             Jogador jogadorBuscado = c.Jogador.First(z => z.IdJogador == novoJogador.IdJogador);
 
             jogadorBuscado.Senha = novoJogador.Senha;
             jogadorBuscado.NomeJogador = novoJogador.NomeJogador;
             jogadorBuscado.Email = novoJogador.Email;
+            jogadorBuscado.IdEquipe = novoJogador.IdEquipe;
 
             c.Jogador.Update(jogadorBuscado);
             c.SaveChanges();

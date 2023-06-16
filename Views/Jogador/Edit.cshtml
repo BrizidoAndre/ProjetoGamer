@@ -1,43 +1,51 @@
+<link rel="stylesheet" href="~/css/jogadores.css">
 @model Jogador
 
 @{
     ViewData["Title"] = "Edit";
-    
+
 }
 
-<h1>Edição de Jogadores</h1>
+<main style="height: 800px;">
+    <section class="container-grid cadastro-equipes">
 
-<form method="post" action='@Url.Action("Atualizar")' enctype="multipart/form-data">
-    @* O input abaixo está escondido através do type'hidden'  *@
-    <input type="hidden" name="IdJogador" value="@ViewBag.Jogador.IdJogador">
-    <input type="hidden" name="IdEquipe" value="@ViewBag.Jogador.IdEquipe">
+        <form method="post" enctype="multipart/form-data" class="frm-cad-equipe" action="@Url.Action("Atualizar")">
+            <div class="cadequipe-titulo">
+                <h1>Edição de Jogadores</h1>
+                <hr>
+            </div>
+            @* O input abaixo está escondido através do type'hidden' *@
+            <input type="hidden" name="IdJogador" value="@ViewBag.Jogador.IdJogador">
 
-    <label for="">Nome</label>
-    <input type="text" name="Nome" value="@ViewBag.Jogador.NomeJogador" required>
+            <label for="">Nome</label>
+            <input class="campo-entrada" type="text" name="Nome" value="@ViewBag.Jogador.NomeJogador" required>
 
-    <label for="">E-mail</label>
-    <input type="email" name="Email" value="@ViewBag.Jogador.Email">
+            <label for="">E-mail</label>
+            <input class="campo-entrada" type="email" name="Email" value="@ViewBag.Jogador.Email">
 
-    <label for="">Senha</label>
-    <input type="password" name="Senha" value="@ViewBag.Jogador.Senha">
+            <label for="">Senha</label>
+            <input class="campo-entrada" type="password" name="Senha" value="@ViewBag.Jogador.Senha">
 
-        <label for="">Equipe</label>
-    <select name="IdEquipe" id="IdEquipe">
-        <option value="0">Selecione uma opção: </option>
-        @foreach (Equipe equipe in ViewBag.Equipe)
-        {
-            @if (equipe.IdEquipe == @ViewBag.Jogador.IdEquipe)
-            {
-                @*selected = aqui que ele mostra o campo preenchido*@
-                <option value="equipe.IdEquipe" selected>@equipe.Nome</option>
-            }
-            
-            else
-            {
-                <option value="@equipe.IdEquipe">@equipe.Nome</option>
-            }
-        }
-    </select>
+            <label for="">Equipe</label>
+            <select class="campo-entrada" name="IdEquipe" id="IdEquipe">
+                <option style="color: black;" value="0">Selecione uma opção: </option>
+                @foreach (Equipe equipe in ViewBag.Equipe)
+                {
+                    @if (equipe.IdEquipe == @ViewBag.Jogador.IdEquipe)
+                    {
+                        @*selected = aqui que ele mostra o campo preenchido*@
+                        <option style="color: black;" value="@equipe.IdEquipe" selected>@equipe.Nome</option>
+                    }
 
-    <button type="submit">Atualizar</button>
-</form>
+                    else
+                    {
+                        <option style="color: black;" value="@equipe.IdEquipe">@equipe.Nome</option>
+                    }
+                }
+            </select>
+
+            <button type="submit">Atualizar</button>
+        </form>
+
+    </section>
+</main>

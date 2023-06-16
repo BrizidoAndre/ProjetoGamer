@@ -223,6 +223,8 @@ main .cadastro-equipes table td {
 
 main .cadastro-equipes table td:last-of-type {
     border: none;
+    display: flex;
+    gap: 20px;
 }
 
 main .cadastro-equipes table td img.green-play {
@@ -230,7 +232,7 @@ main .cadastro-equipes table td img.green-play {
 }
 
 main .cadastro-equipes table td a img.yellow-trash {
-    width: 15px;
+    width: 20px;
 }
 
 

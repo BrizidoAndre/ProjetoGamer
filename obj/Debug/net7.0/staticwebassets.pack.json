@@ -241,6 +241,10 @@
       "PackagePath": "staticwebassets\\assets\\vector-user.svg"
     },
     {
+      "Id": "C:\\Users\\51910007811\\Desktop\\ProjetoGamer\\wwwroot\\assets\\yellow-gear.png",
+      "PackagePath": "staticwebassets\\assets\\yellow-gear.png"
+    },
+    {
       "Id": "C:\\Users\\51910007811\\Desktop\\ProjetoGamer\\wwwroot\\css\\Header-Footer.css",
       "PackagePath": "staticwebassets\\css\\Header-Footer.css"
     },
@@ -371,6 +375,10 @@
     {
       "Id": "C:\\Users\\51910007811\\Desktop\\ProjetoGamer\\wwwroot\\img\\Equipes\\Imagem",
       "PackagePath": "staticwebassets\\img\\Equipes"
+    },
+    {
+      "Id": "C:\\Users\\51910007811\\Desktop\\ProjetoGamer\\wwwroot\\img\\Equipes\\Petebaseball.webp",
+      "PackagePath": "staticwebassets\\img\\Equipes\\Petebaseball.webp"
     },
     {
       "Id": "C:\\Users\\51910007811\\Desktop\\ProjetoGamer\\wwwroot\\img\\Equipes\\corinthians.png",
