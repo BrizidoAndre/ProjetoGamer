@@ -212,7 +212,7 @@ main .cadastro-equipes table tbody tr {
 }
 
 main .cadastro-equipes table td {
-    width: 100%;
+    width: 200px;
     height: 38px;
     padding: 0 8px;
     display: flex;
